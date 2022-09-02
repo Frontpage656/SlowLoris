@@ -2,16 +2,11 @@ import java.io.IOException;
 import java.net.*;
 import java.util.Random;
 
-/**
- * Created by connor on 14/11/15.
- */
 public class Connector implements Runnable
+
 {
-    /** the number of socket connections to the server per `Connector` instance */
     private static final int NUMBER_OF_CONNECTIONS = 5;
-    /** the server port to connect to */
     private int serverPort;
-    /** number of seconds to stop the attack after, 0 = never stop */
     private int attackMinutes;
 
     /** the URL of the target */
